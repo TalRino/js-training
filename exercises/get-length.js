@@ -9,6 +9,12 @@
 
 // Your code :
 
+function getLength(string) {
+    string = "La note de l'élève est ";
+    return getLength.length
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
