@@ -9,6 +9,15 @@
 
 // Your code :
 
+
+function sameSign (numberA, numberB) {
+    if (numberA < 0 && numberB < 0 || numberA === 0 && numberB === 0  || numberA > 0 && numberB > 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
 //* Begin of tests
 const assert = require('assert')
 
@@ -24,3 +33,4 @@ assert.strictEqual(sameSign(-231, 0), false)
 assert.strictEqual(sameSign(0, 231), false)
 assert.strictEqual(sameSign(231, -233), false)
 // End of tests */
+

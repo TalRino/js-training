@@ -10,8 +10,7 @@
 // Your code :
 
 function getLength(string) {
-    string = "La note de l'élève est ";
-    return getLength.length
+    return string.length
 }
 
 

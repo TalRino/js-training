@@ -7,6 +7,13 @@
  */
 
 
+// Your code :
+
+function total(array) {
+    let tab = [1,2,3];
+}
+    return total.length
+
 //* Begin of tests
 const assert = require('assert')
 

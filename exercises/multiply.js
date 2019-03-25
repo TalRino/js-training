@@ -10,6 +10,10 @@
 
 // Your code :
 
+function multiply(numberA, numberB) {
+}
+return multiply
+
 //* Begin of tests
 const assert = require('assert')
 
@@ -26,3 +30,28 @@ assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
 // End of tests */
+
+function multiply(x, y) {
+    var total = 0;
+    if (x == 0 || y == 0) {
+    return 0;
+    } else if (x < 0 && y > 0) {
+    for (var i = 0; i < y; i++) {
+    total += x;
+    }
+    } else if (x < 0 && y < 0) {
+    for (var i = y; i < 0; i++) {
+    total += Math.abs(x);
+    }
+    } else if (x > 0 && y > 0) {
+    for (var i = 0; i < x; i++) {
+    total += y;
+    }
+    } else if (x > 0 && y < 0) {
+    for (var i = y; i < 0; i++) {
+    total += x;
+    } return -Math.abs(total)
+    }
+    return total;
+    
+    }
