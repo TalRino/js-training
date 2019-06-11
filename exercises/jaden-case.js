@@ -10,10 +10,21 @@
  *
  */
 
+ function jadenCase(str) {  
+     
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+
+}
+
 
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
 // End of tests */
